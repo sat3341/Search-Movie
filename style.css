@@ -1,0 +1,148 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;         /* Standard */
+}
+
+:root{
+  --bg: #000;
+  --header-bg: #000;
+  --footer-bg: #000;
+  --nav-bg: #0000;
+  --main-bg: auto;
+  --movie-bg: #000;
+  --movie-name-bg: #000;
+  --movie-name-color: #fff;
+  --movie-download-name-bg: #2ecc71;
+  --movie-download-name-color: #fff;
+  --search-bg: #3338;
+  --search-color: #0f0;
+  --search-border: #000;
+  --main-bg: #3338;
+  --textarea-color: #0f0;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg);
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+}
+
+/* HEADER */
+header{
+  width: 100vw;
+  height: 100px;
+  background: var(--header-bg);
+}
+
+/* FOOTER */
+footer{
+  width: 100vw;
+  height: 40px;
+  background: var(--footer-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+}
+
+/* SEARCH BAR */
+#search{
+  width: 90vw;
+  height: 60px;
+  margin: 20px 5vw;
+  border-radius: 30px;
+  padding: 20px;
+  font-size: 20px;
+  outline: none;
+  border: solid 2px var(--search-border);
+  background: var(--search-bg);
+  color: var(--search-color);
+}
+
+/* FOOTER INPUT */
+footer textarea{
+  width: 90vw;
+  height: 25px;
+  border-radius: 30px;
+  margin: 0 5vw;
+  font-size: 20px;
+  text-align: center;
+  outline: none;
+  resize: none;
+  border: none;
+  background: none;
+  color: var(--textarea-color);
+  padding-top: 3px;
+}
+
+/* NAVIGATION AREA */
+nav{
+  width: 100vw;
+  height: calc(100vh - 140px);
+  background: var(--nav-bg); 
+}
+
+nav main{
+  width: 96%;
+  height: 96%;
+  margin: 3% 2%;
+  background: var(--main-bg);
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+/* MOVIE BOX */
+.movie{
+  width: 90vw;
+  height: 100px;
+  background: var(--movie-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+/* MOVIE NAME */
+.movie .movie_name{
+  width: 65%;
+  height: 80px;
+  background: var(--movie-name-bg);
+  color: var(--movie-name-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* DOWNLOAD BUTTON */
+.movie .download{
+  width: 28%;
+  height: 80px;
+  background: var(--movie-download-name-bg);
+  color: var(--movie-download-name-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.movie .download:active{
+  transform: scale(1.1);
+  background: #27ae60;
+}
