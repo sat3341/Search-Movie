@@ -38,7 +38,7 @@ body{
 /* HEADER */
 header{
   width: 100vw;
-  height: 100px;
+  height: 80px;
   background: var(--header-bg);
 }
 
@@ -87,7 +87,7 @@ footer textarea{
 /* NAVIGATION AREA */
 nav{
   width: 100vw;
-  height: calc(100vh - 140px);
+  height: calc(100vh - 120px);
   background: var(--nav-bg); 
 }
 
