@@ -132,7 +132,7 @@ nav main{
 
 /* DOWNLOAD BUTTON */
 .movie .download{
-  width: 28%;
+  width: 27%;
   height: 80px;
   background: var(--movie-download-name-bg);
   color: var(--movie-download-name-color);
